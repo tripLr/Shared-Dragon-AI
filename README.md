@@ -1,24 +1,34 @@
 # Shared-Dragon-AI
 
-Shareable skills and components for the Train Your Dragon AI system.
+**Shareable skills and versioned backups for the Train Your Dragon system.**
 
-Portable, human-owned AI collaboration tools that anyone can adopt or adapt.
+This repository holds recoverable copies of the skills created and running in the personal Train Your Dragon environment.
 
 ## Purpose
 
-- Collect useful skills that emerged from personal My-Dragon-AI instances.
-- Provide clean, well-documented examples for others.
-- Keep the core philosophy (human ownership, versioning, memory as core) intact.
+- Versioned backup of custom skills
+- Recovery source if a local environment is lost or reset
+- Shareable components (when deliberately published)
 
-## How to Contribute
+## Current Status
 
-1. Develop a skill in your own My-Dragon-AI instance.
-2. If it proves useful and general, propose it here.
-3. Follow the same versioning and review principles as the main project.
+**Durability test in progress** (started 2026-07-22).
 
-This repo is part of the larger Train Your Dragon ecosystem:
-- Train-Your-Dragon-AI (core principles)
-- My-Dragon-AI (private personal system)
-- Shared-Dragon-AI (publicly shareable skills)
+This is an active test of making the Train Your Dragon skill layer durable across instances.
 
-See the main repo for full context.
+## Structure
+
+```
+Shared-Dragon-AI/
+├── README.md
+├── skills/                    ← current skill definitions
+│   └── (individual SKILL.md files)
+└── versions/                  ← dated snapshots
+    └── 2026-07-22/
+```
+
+## Relationship
+
+- **My-Dragon-AI** (private) — memory backups, history, my-research
+- **Train-Your-Dragon-AI** (public) — philosophy and method
+- **Shared-Dragon-AI** (this repo) — skill backups and shareable components
